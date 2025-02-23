@@ -25,7 +25,7 @@ $(document).ready(function() {
         let stok = $("#stok").val();
         let diskon = $("#diskon").val();
 
-        let url = id_barang ? "https://www.smkn1kuwus.sch.id/api-minimarket/php/barang/update.php" : "php/barang/create.php";
+        let url = id_barang ? "https://www.smkn1kuwus.sch.id/api-minimarket/php/barang/update.php" : "https://www.smkn1kuwus.sch.id/api-minimarket/php/barang/create.php";
         
         $.post(url, { id_barang, nama_barang, kategori, harga, stok, diskon }, function(response) {
             if (response === "success") {
